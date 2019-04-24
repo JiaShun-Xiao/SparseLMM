@@ -1,5 +1,5 @@
 # SparseLMM
-the implement of “varbvs: Fast Variable Selection for Large-scale Regression” in pytho
+the implement of “varbvs: Fast Variable Selection for Large-scale Regression” in python
 
 ### Description
 Consider a linear model that relates covariates Z (Z1,...,Zm) and variables X (X1,...,Xp) to the response Y : <br>
@@ -14,10 +14,10 @@ The main idea is deriving a variational expectation-maximization algorithm based
 Here I only implement the fully-factorized variational approximation for Bayesian variable selection in linear regression.  
 
 ### Dependence
-Python 3.6.8
+Python 3.6.8  <br>
 numpy 1.16.2
 
 ### Reference 
-http://pcarbo.github.io/varbvs
-Carbonetto, P., Zhou, X., & Stephens, M. (2017). varbvs: Fast Variable Selection for Large-scale Regression. arXiv preprint arXiv:1709.06597.
+http://pcarbo.github.io/varbvs  <br>
+Carbonetto, P., Zhou, X., & Stephens, M. (2017). varbvs: Fast Variable Selection for Large-scale Regression. arXiv preprint arXiv:1709.06597.  <br>
 Carbonetto, P., & Stephens, M. (2012). Scalable variational inference for Bayesian variable selection in regression, and its accuracy in genetic association studies. Bayesian analysis, 7(1), 73-108.
