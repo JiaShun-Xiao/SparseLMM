@@ -3,6 +3,25 @@ import logging
 
 logging.basicConfig(filename='spaselmm.log', level=logging.DEBUG)
 
+###
+# Input Arguments
+###
+# X: n x p input matrix, where n is the number of samples, and p is the number of variables. X cannot be sparse.
+# Z: n x m covariate data matrix
+# y: Vector of length n containing phenotype
+
+###
+# Output Arguments
+###
+# w: normalized weights compute from logw.
+# alpha: variational estimates of posterior inclusion probs.
+# pip: "Averaged" posterior inclusion probabilities.
+# mu:  variational estimates of posterior mean coefficients.
+# mu_cov: posterior estimates of coefficients for covariates.
+# heri: estimated heritability
+# logodd: approximate marginal log-likelihood for each setting of hyperparameters.
+
+
 def varbvs(X,y,Z=None,tol=1e-5,maxiter=1e5,verbose=False):
     logging.info("X,y,Z shape: {},{},{}".format(str(X.shape),str(y.shape),str(Z.shape)))
     X = X.astype(np.float32)
